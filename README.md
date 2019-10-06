@@ -1,2 +1,2 @@
 # galleryrifle
-Carious code for GR stuff
+Various code for GR stuff

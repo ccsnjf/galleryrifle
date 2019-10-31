@@ -86,7 +86,11 @@ for event in events:
     with open(outfile, mode='w', newline='') as event_file:
         event_file_writer = csv.writer(event_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
         event_file_writer.writerow(['GRID', 'Name', 'VenueID', 'Venue', 'EventNo', 'Event', 'Score'])
-
+        
+        # rankingsinput file must be of format:
+        # "GRID","Name","VenueID","Venue","EventNO","Event","Score","Xcount"
+        # row[0], row[1], row[2],  row[3],  row[4],  row[5], row[6], row[7],
+        # or amend
         with open(input_path + 'rankings.csv', newline='') as readin:
             csv_reader = csv.reader(readin)
             sort = sorted(csv_reader, key=operator.itemgetter(0))

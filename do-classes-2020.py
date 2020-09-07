@@ -227,13 +227,13 @@ with open ('classes702.txt', 'w', newline = '', encoding="utf-8-sig") as class_w
                 elif 300.023 <= float(row[3]) <= 300.026:
                     row.append('A')
                     class_file_writer.writerow(row)
-                elif 300.000 <= float(row[3]) < 300.022:
+                elif 300.000 <= float(row[3]) <= 300.022:
                     row.append('B')
                     class_file_writer.writerow(row)
-                elif 297.000 <= float(row[3]) < 299.030:
+                elif 297.000 <= float(row[3]) <= 299.030:
                     row.append('C')
                     class_file_writer.writerow(row)
-                elif 1 <= float(row[3]) < 296.030:
+                elif 1 <= float(row[3]) <= 296.030:
                     row.append('D')
                     class_file_writer.writerow(row)
                 else:
